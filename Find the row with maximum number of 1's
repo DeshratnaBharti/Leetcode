@@ -1,0 +1,36 @@
+class Solution
+{
+    public:
+        int lowerBound(vector <int> arr, int n , int x){
+        int l =0, high = n-1,ans = n;
+        while(l<=high){
+            int mid = (l+high)/2;
+            if(arr[mid] >= x){
+                ans = mid;
+                high = mid -1;
+            }
+            else{
+                l = mid+1;
+            }
+            
+        }
+        return ans;
+            
+        }
+        int maxOnes (vector <vector <int>> &mat, int n, int m)
+        {
+              int cnt_max = 0;
+    int index = -1;
+
+    //traverse the rows:
+    for (int i = 0; i < n; i++) {
+        // get the number of 1's:
+        int cnt_ones = m - lowerBound(mat[i], m, 1);
+        if (cnt_ones > cnt_max) {
+                cnt_max = cnt_ones;
+                index = i;
+        }
+    }
+    return index;
+        }
+};
