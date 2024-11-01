@@ -31,7 +31,7 @@ public:
         ListNode* a = head;
         ListNode* b = newhead;
     //    if ( a == NULL or b== NULL) return false;
-        while(b and a ){
+        while(b  ){
             if( a->val != b->val) {return false;}
              a = a->next;
              b= b->next;
