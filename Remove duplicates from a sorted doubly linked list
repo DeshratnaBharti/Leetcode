@@ -1,0 +1,24 @@
+class Solution
+{
+public:
+
+    Node * removeDuplicates(struct Node *head)
+    {
+      struct Node *curr = head, *forward = curr->next;
+      while(forward){
+          if(curr->data == forward->data){
+              curr->next = forward->next;
+              if(forward->next != NULL){
+                  forward->next->prev = curr;
+              }
+                  forward = forward->next;
+                  
+          }else{
+                  curr = curr->next;
+                  forward = forward->next;
+              }
+          
+      }
+      return head;
+    }
+};
