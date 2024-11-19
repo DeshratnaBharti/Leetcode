@@ -27,7 +27,7 @@ public:
          n = s.length();
         vector<vector<string> >result;
         vector<string> temp;
-        // n = s.length();
+      
         solve(s,0,temp,result);
         return result;
             
