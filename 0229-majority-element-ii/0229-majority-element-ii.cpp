@@ -1,19 +1,30 @@
 class Solution {
 public:
-    vector<int> majorityElement(vector<int>& arr) {
-        int n = arr.size();
-        vector<int>ans;
-        unordered_map<int,int>m;
-          int mini = int(n / 3) + 1;
+    vector<int> majorityElement(vector<int>& nums) {
+        int n =nums.size();
+        int count1 =0; int count2=0; int maj1 = INT_MAX; int maj2 = INT_MAX;
         for(int i=0;i<n;i++){
-            m[arr[i]]++;
-        
-             if (m[arr[i]] == mini) {
-            ans.push_back(arr[i]);}
-             if (ans.size() == 2) break;
+            if(nums[i]== maj1) count1++;
+            else if(nums[i]==maj2) count2++;
+            else if(count1==0){
+                maj1=nums[i];
+                count1=1;   
+            }else if(count2 == 0){
+                maj2 = nums[i];
+                count2 =1;
+            }else{
+                count1--;
+                count2--;
+            }
         }
-        return ans;
-
-        
+        vector<int>result;
+        int freq1=0; int freq2 =0;
+        for(int &num : nums){
+            if(num == maj1) freq1++;
+            else if(num == maj2 ) freq2++;
+        }
+        if(freq1 > floor(n/3)) result.push_back(maj1);
+        if(freq2> floor(n/3)) result.push_back(maj2);
+        return result;
     }
 };
