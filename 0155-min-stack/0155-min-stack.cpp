@@ -1,28 +1,40 @@
 class MinStack {
 public:
-vector<int> v;
+    /** initialize your data structure here. */
+    stack<int> stk;
+    int m = INT_MAX;
     MinStack() {
-        vector<int> v;
     }
     
     void push(int x) {
-        v.push_back(x);
+        if(x <= m){ //note it's <=, not <!
+            //2nd smallest value is under 1st smallest value
+            stk.push(m);
+            m = x;
+        }
+        stk.push(x);
     }
     
     void pop() {
-        v.erase(v.begin()+v.size()-1);
+        int tmp = stk.top();
+        stk.pop();
+        //pop 2nd smallest value along 1st smallest value
+        if(tmp == m){
+            //when pop 1st smallest value
+            //update m to 2nd smallest value
+            m = stk.top();
+            stk.pop();
+        }
     }
     
     int top() {
-        //return v[v.size()-1];
-        return v.back();
+        return stk.top();
     }
     
     int getMin() {
-        return *min_element(v.begin(), v.end());
+        return m;
     }
 };
-
 /**
  * Your MinStack object will be instantiated and called as such:
  * MinStack* obj = new MinStack();
