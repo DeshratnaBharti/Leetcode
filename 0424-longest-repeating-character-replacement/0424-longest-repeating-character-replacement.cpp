@@ -12,7 +12,7 @@ public:
                 while((r-l+1) -maxF>k){
                     mp[arr[l]-'A']--;
                     maxF =0;
-                    for(int i=0;i<25;i++) maxF = max(maxF,mp[i]);
+                   
                     l++;
                 }
             
