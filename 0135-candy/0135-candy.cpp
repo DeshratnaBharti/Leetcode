@@ -18,7 +18,7 @@ public:
             }
             //decreasing slope
             int dip =0;
-            while(ratings[i] < ratings[i-1]){
+            while(i<n and ratings[i] < ratings[i-1]){
                 dip++;
                 candy += dip;
                 i++;
