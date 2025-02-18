@@ -1,7 +1,8 @@
+
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-       vector<int> ans;
+         vector<int> ans;
        TreeNode* curr =root;
        while(curr != NULL){
          if(curr->left ){
@@ -19,7 +20,7 @@ public:
                curr=curr->right;
            }
          }
-         else{//cur->left==NULL
+         else{
             ans.push_back(curr->val);
             curr=curr->right;
 
