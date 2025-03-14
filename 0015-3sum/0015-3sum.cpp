@@ -1,15 +1,15 @@
 class Solution {
 public:
  vector<vector<int>> result;
- void twosum(vector<int>& nums,int tgt,int i, int j){
-    while(i<j){
-        if(nums[i]+nums[j]> tgt)j--;
-        else  if(nums[i]+nums[j]<tgt) i++;
+ void twosum(vector<int>& nums,int tgt,int j, int k){
+    while(j<k){
+        if(nums[j]+nums[k]> tgt)k--;
+        else  if(nums[j]+nums[k]<tgt) j++;
         else{
-            while(i<j and nums[i]==nums[i+1]) i++;
-             while(i<j and nums[j]==nums[j-1]) j--;
-             result.push_back({-tgt,nums[i],nums[j]});
-             i++; j--;
+            while(j<k and nums[j]==nums[j+1]) j++;
+             while(j<k and nums[k]==nums[k-1]) k--;
+             result.push_back({-tgt,nums[j],nums[k]});
+             j++; k--;
         }
     }
  }
