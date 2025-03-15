@@ -1,39 +1,28 @@
 class Solution {
 public:
     int countPalindromicSubsequence(string s) {
-         vector<int> leftCount(26, 0);     // To keep track of left side characters
-    vector<int> rightCount(26, 0);    // To keep track of right side characters
-
-    // Initial right count
-    for (char c : s) {
-        rightCount[c - 'a']++;
-    }
-
-    unordered_set<string> uniquePalindromes; // To store unique palindromes
-
-    // Traverse through the string treating every character as the middle
-    for (char middle : s) {
-        int middleCharIndex = middle - 'a';
-
-        // Remove current middle character from right count
-        rightCount[middleCharIndex]--;
-
-        // Check for palindromes with this middle character
-        for (int leftCharIndex = 0; leftCharIndex < 26; leftCharIndex++) {
-            if (leftCount[leftCharIndex] > 0 && rightCount[leftCharIndex] > 0) {
-                // Correctly create the palindrome
-                string palindrome = "";
-                palindrome += (char)(leftCharIndex + 'a'); // Convert to char
-                palindrome += middle;                     // Add middle character
-                palindrome += (char)(leftCharIndex + 'a'); // Convert to char
-                uniquePalindromes.insert(palindrome);
-            }
+       int n = s.length();
+       unordered_set<char>letters;
+       for(int i=0;i<n;i++){
+          letters.insert(s[i]);
+       } 
+       int result =0;
+       for(char letter: letters){
+        int left_idx =-1;
+        int right_idx =-1;
+        for(int i=0;i<n;i++){
+          if(s[i] == letter){
+            if(left_idx ==-1) left_idx = i;
+            right_idx = i;
+          }
         }
+        unordered_set<char>st;
+        for(int middle = left_idx+1;middle<=right_idx-1;middle++){
+            st.insert(s[middle]);
+        }
+        result += st.size();
 
-        // Add the current middle character to left count
-        leftCount[middleCharIndex]++;
-    }
-
-    return uniquePalindromes.size();
+       }
+       return result;
     }
 };
