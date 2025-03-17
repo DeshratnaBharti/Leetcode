@@ -1,15 +1,10 @@
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        while (root) {
-            if (p->val < root->val && q->val < root->val) {
-                root = root->left; // Move to the left subtree
-            } else if (p->val > root->val && q->val > root->val) {
-                root = root->right; // Move to the right subtree
-            } else {
-                return root; // Found the LCA
-            }
-        }
-        return nullptr;
+        if(root->val == p->val or root->val == q->val) return root;
+        if(root->val >p->val and root->val <q->val) return root;
+        else if(root->val <p->val and root->val >q->val) return root;
+        else if(root->val <p->val and root->val <q->val) return lowestCommonAncestor(root->right,p,q);
+        else return lowestCommonAncestor(root->left,p,q);
     }
 };
