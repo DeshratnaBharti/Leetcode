@@ -18,12 +18,13 @@ public:
                 que.pop();
                 int i = curr.first;
                 int j = curr.second;
-                 arr[i][j] = color;
+                 
                 for(vector<int>&dir:directions){
                     int new_i=i+dir[0];
                     int new_j=j+dir[1];
                     if(new_i >=0 and new_i <m and new_j >= 0 and new_j <n and arr[new_i][new_j]== originalColor){
-                        
+                        arr[i][j] = color;
+                        arr[new_i][new_j]=color;
                         que.push({new_i,new_j});
                     }
                 }
