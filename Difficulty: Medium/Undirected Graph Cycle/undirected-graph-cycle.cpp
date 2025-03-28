@@ -5,31 +5,23 @@ using namespace std;
 
 // } Driver Code Ends
 
+
 class Solution {
   public:
     // Function to detect cycle in an undirected graph
-  typedef pair<int, int> P;
+  
 
-bool isCycleBFS(vector<vector<int>>& adj, int u, vector<bool>& visited) {
-    queue<P> que;
-    visited[u] = true; // Mark the starting node as visited
-    que.push({u, -1});
+bool isCycleDFS(vector<vector<int>>& adj, int u, vector<bool>& visited,int parent) {
     
-    while (!que.empty()) {
-        P curr = que.front();
-        que.pop();
-        int source = curr.first;
-        int parent = curr.second;
+    visited[u] = true; // Mark the starting node as visited
+   
         
-        for (int& v : adj[source]) {
-            if (!visited[v]) {
-                visited[v] = true;
-                que.push({v, source});
-            } else if (v != parent) {
-                return true; // Found a back edge, cycle detected
-            }
+        for (int &v : adj[u]) {
+            if(v==parent) continue;
+            if(visited[v]) return true;
+            if(isCycleDFS(adj,v,visited,u)) return true;
         }
-    }
+    
     return false;
 }
     bool isCycle(vector<vector<int>>& adj) {
@@ -38,13 +30,15 @@ bool isCycleBFS(vector<vector<int>>& adj, int u, vector<bool>& visited) {
     vector<bool> visited(n, false);
     
     for (int i = 0; i < n; i++) {
-        if (!visited[i] && isCycleBFS(adj, i, visited)) {
+        if (!visited[i] && isCycleDFS(adj, i, visited,-1)) {
             return true;
         }
     }
     return false;
     }
 };
+
+
 
 
 //{ Driver Code Starts.
