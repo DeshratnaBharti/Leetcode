@@ -4,6 +4,7 @@ using namespace std;
 
 
 // } Driver Code Ends
+
 class Solution {
   public:
     int activitySelection(vector<int> &start, vector<int> &end) {
@@ -26,6 +27,8 @@ class Solution {
     }
 };
 
+
+
 //{ Driver Code Starts.
 
 int main() {
@@ -42,13 +45,13 @@ int main() {
             start.push_back(num);
         getline(cin, input);
         ss.clear();
-        vector<int> end;
+        vector<int> finish;
         ss.str(input);
         while (ss >> num)
-            end.push_back(num);
+            finish.push_back(num);
 
         Solution obj;
-        cout << obj.activitySelection(start, end) << endl;
+        cout << obj.activitySelection(start, finish) << endl;
         cout << "~\n";
     }
     return 0;
