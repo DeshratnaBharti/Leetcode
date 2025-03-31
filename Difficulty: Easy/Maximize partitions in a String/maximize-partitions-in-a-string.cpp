@@ -10,17 +10,24 @@ class Solution {
     int maxPartitions(string &s) {
         // code here
          int n=s.length();
-        vector<int>last(26,-1);
+             
+        vector<int>mp(26,-1);
+    //    vector<int>result;
         for(int i=0;i<n;i++){
-            last[s[i]-'a']=i;
+            int idx = s[i]-'a';
+            mp[idx]=i;
         }
-        int count=0, curr=-1;
-        for(int i=0;i<n;i++){
-            curr=max(curr,last[s[i]-'a']);
-            if(curr==i){
-                count++;
-                curr=-1;
+        int count=0;
+        int i=0;
+        while(i<n){
+            int end = mp[s[i]-'a'];
+            int j=i;
+            while(j<end){
+                end = max(end,mp[s[j]-'a']);
+                j++;
             }
+          count++;
+            i=j+1;
         }
         return count;
     }
