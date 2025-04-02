@@ -4,8 +4,8 @@ public:
         unordered_set<string> dict(wordList.begin(), wordList.end());
         if (dict.find(endWord) == dict.end()) return {}; // Ensure endWord is in wordList
 
-        unordered_map<string, vector<string>> parents; // Store predecessors
-        unordered_set<string> visited, currentLevelVisited; // Mark visited nodes
+        unordered_map<string, vector<string>> parents; // To store predecessors
+        unordered_set<string> visited, currentLevelVisited;
         queue<string> que;
         que.push(beginWord);
         bool found = false;
@@ -24,38 +24,38 @@ public:
                         temp[j] = ch;
 
                         if (dict.find(temp) != dict.end() && visited.find(temp) == visited.end()) {
-                            currentLevelVisited.insert(temp);
-                            parents[temp].push_back(word); // Record the predecessor
-                            que.push(temp);
-
+                            if (currentLevelVisited.find(temp) == currentLevelVisited.end()) {
+                                que.push(temp); // Add temp to queue once per level
+                                currentLevelVisited.insert(temp);
+                            }
+                            parents[temp].push_back(word); // Track parent relationships
                             if (temp == endWord) found = true;
                         }
                     }
                 }
             }
-            visited.insert(currentLevelVisited.begin(), currentLevelVisited.end()); // Mark words in current level as visited
+            visited.insert(currentLevelVisited.begin(), currentLevelVisited.end()); // Update visited after level
         }
 
-        // Backtracking to construct all paths
+        // Backtracking to construct unique paths
         vector<vector<string>> result;
         vector<string> path;
         if (found) {
-            backtrack(endWord, beginWord, parents, path, result);
+            dfs(endWord, beginWord, parents, path, result);
         }
-
         return result;
     }
 
 private:
-    void backtrack(const string& word, const string& beginWord, 
-                   unordered_map<string, vector<string>>& parents, 
-                   vector<string>& path, vector<vector<string>>& result) {
+    void dfs(const string& word, const string& beginWord, 
+             unordered_map<string, vector<string>>& parents, 
+             vector<string>& path, vector<vector<string>>& result) {
         path.push_back(word);
         if (word == beginWord) {
-            result.push_back(vector<string>(path.rbegin(), path.rend())); // Reverse path
+            result.push_back(vector<string>(path.rbegin(), path.rend())); // Reverse path for output
         } else {
-            for (const auto& parent : parents[word]) {
-                backtrack(parent, beginWord, parents, path, result);
+            for (const string& parent : parents[word]) {
+                dfs(parent, beginWord, parents, path, result);
             }
         }
         path.pop_back();
