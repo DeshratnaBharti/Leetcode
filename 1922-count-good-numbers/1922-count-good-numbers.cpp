@@ -1,20 +1,27 @@
-int MOD = 1000000007;
 class Solution {
 public:
-    int countGoodNumbers(long long n) {
-        return (int) (myPow(5, (n + 1) >> 1) * myPow(4, n >> 1) % MOD);
-    }
+    long long power(int a,int b,int MOD){
+        if(b==0) return 1;
+        long long result;
+        long long half=power(a,b/2,MOD);
+        
+        result = (half*half )%MOD;
 
-private:
-    long long myPow(long long x, long long n) {
-        long long res = 1;
-        while (n) {
-            if ((n & 1) == 1) {
-                res = res * x % MOD;
-            }
-            x = x * x % MOD;
-            n >>= 1;
+        if(b %2 ==1){
+            result = (result*a)%MOD;
         }
-        return res;
+        return result;
+    }
+    int countGoodNumbers(long long n) {
+        const int MOD = 1e9 + 7;
+    long long evenCount = (n + 1) / 2; // Number of even positions
+    long long oddCount = n / 2;       // Number of odd positions
+    
+    // Calculate powers modulo
+    long long evenChoices = power(5, evenCount, MOD);
+    long long oddChoices = power(4, oddCount, MOD);
+    
+    // Final result
+    return (evenChoices * oddChoices) % MOD;
     }
 };
