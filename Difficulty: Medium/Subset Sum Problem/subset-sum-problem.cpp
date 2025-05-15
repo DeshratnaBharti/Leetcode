@@ -8,6 +8,7 @@ using namespace std;
 
 class Solution {
   public:
+  //top down approach
   int t[10001][201];
   int n;
     bool f(vector<int>& arr, int sum,int idx){
