@@ -7,34 +7,31 @@ using namespace std;
 
 class Solution {
 public:
-    int n;
-    vector<vector<int>> dp;
+   // bottom up approach
+    int perfectSum(vector<int>& arr, int target) {
+        const int MOD = 1e9 + 7;
+        int n = arr.size();
+        vector<vector<int>> dp(n, vector<int>(target + 1, 0));
 
-    int f(vector<int>& arr, int target, int i) {
-        if (i == n) {
-            return (target == 0) ? 1 : 0;
+     
+        if (arr[0] == 0) {
+            dp[0][0] = 2; 
+        } else {
+            dp[0][0] = 1;
+            if (arr[0] <= target)
+                dp[0][arr[0]] = 1;
         }
 
-        if (dp[i][target] != -1) return dp[i][target];
+        for (int i = 1; i < n; ++i) {
+            for (int t = 0; t <= target; ++t) {
+                int not_take = dp[i - 1][t];
+                int take = (arr[i] <= t) ? dp[i - 1][t - arr[i]] : 0;
+                dp[i][t] = (not_take + take) % MOD;
+            }
+        }
 
-        int take = 0;
-        if (target >= arr[i])
-            take = f(arr, target - arr[i], i + 1);
-
-        int not_take = f(arr, target, i + 1);
-
-        return dp[i][target] = take + not_take;
+        return dp[n - 1][target];
     }
-
-    int perfectSum(vector<int>& arr, int target) {
-        n = arr.size();
-
-        // To handle 0 targets and possible values
-        dp = vector<vector<int>>(n + 1, vector<int>(target + 1, -1));
-        return f(arr, target, 0);
-    }
-
-
 };
 
 
