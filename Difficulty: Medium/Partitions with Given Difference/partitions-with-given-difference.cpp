@@ -9,19 +9,20 @@ using namespace std;
 
 class Solution {
   public:
+   // top down approach
     vector<vector<int>> dp;
     
-    int countPartitionsHelper(vector<int>& arr, int index, int target) {
+    int f(vector<int>& arr, int index, int target) {
         if (index == 0) {
-            if (target == 0 && arr[0] == 0) return 2; // include or exclude 0
+            if (target == 0 && arr[0] == 0) return 2; 
             if (target == 0 || target == arr[0]) return 1;
             return 0;
         }
     
         if (dp[index][target] != -1) return dp[index][target];
     
-        int exclude = countPartitionsHelper(arr, index - 1, target);
-        int include = (target >= arr[index]) ? countPartitionsHelper(arr, index - 1, target - arr[index]) : 0;
+        int exclude = f(arr, index - 1, target);
+        int include = (target >= arr[index]) ? f(arr, index - 1, target - arr[index]) : 0;
     
         return dp[index][target] = exclude + include;
     }
@@ -34,7 +35,7 @@ class Solution {
         int n = arr.size();
         
         dp.assign(n, vector<int>(target + 1, -1));
-        return countPartitionsHelper(arr, n - 1, target);
+        return f(arr, n - 1, target);
     }
 
 
