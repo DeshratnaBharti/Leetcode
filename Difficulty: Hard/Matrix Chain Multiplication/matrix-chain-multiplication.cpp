@@ -6,27 +6,28 @@ using namespace std;
 // } Driver Code Ends
 
 class Solution {
-  public:
-   int t[101][101];
-     int f(int start,int end,vector<int>&arr){
-         if(end-start==1) return 0;
-         int ans = INT_MAX;
-         if(t[start][end] != -1) return t[start][end];
-         for(int k= start+1;k<end;k++){
-             int left = f(start,k,arr);
-             int right = f(k,end,arr);
-             ans = min(ans,left+right+arr[start]*arr[k]*arr[end]);
-             
-         }
-         return t[start][end]= ans;
-     }
+public://bottom up
     int matrixMultiplication(vector<int> &arr) {
-        // code here
         int n = arr.size();
-        memset(t,-1,sizeof(t));
-        return f(0,n-1,arr);
+        vector<vector<int>> dp(n, vector<int>(n, 0));
+
+        
+        for(int len = 2; len < n; len++) {
+            for(int i = 0; i < n - len; i++) {
+                int j = i + len;
+                dp[i][j] = INT_MAX;
+
+                for(int k = i + 1; k < j; k++) {
+                    int cost = dp[i][k] + dp[k][j] + arr[i] * arr[k] * arr[j];
+                    dp[i][j] = min(dp[i][j], cost);
+                }
+            }
+        }
+
+        return dp[0][n-1];
     }
 };
+
 
 
 //{ Driver Code Starts.
