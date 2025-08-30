@@ -1,35 +1,36 @@
 class Solution {
 public:
-    string minWindow(string s, string t) {
-           vector<int> need(128, 0);
-        vector<int> window(128, 0);
-        for (char c : t) {
-            ++need[c];
-        }
+    string minWindow(string s, string p) {
+        if (p.length() > s.length()) return "";
 
-        int m = s.length(), n = t.length();
-        int k = -1, mi = m + 1, cnt = 0;
+        vector<int> need(128, 0), window(128, 0);
+        for (char ch : p) need[ch]++;
 
-        for (int l = 0, r = 0; r < m; ++r) {
-            char c = s[r];
-            if (++window[c] <= need[c]) {
-                ++cnt;
-            }
-            while (cnt == n) {
-                if (r - l + 1 < mi) {
-                    mi = r - l + 1;
-                    k = l;
+        int required = 0;
+        for (int i = 0; i < 128; i++)
+            if (need[i] > 0) required++;
+
+        int formed = 0, left = 0, minLen = INT_MAX, start = -1;
+
+        for (int right = 0; right < s.length(); right++) {
+            char ch = s[right];
+            window[ch]++;
+            if (window[ch] == need[ch]) formed++;
+
+            while (formed == required) {
+                if (right - left + 1 < minLen) {
+                    minLen = right - left + 1;
+                    start = left;
                 }
 
-                c = s[l];
-                if (window[c] <= need[c]) {
-                    --cnt;
-                }
-                --window[c];
-                ++l;
+                char remove = s[left];
+                window[remove]--;
+                if (window[remove] < need[remove]) formed--;
+                left++;
             }
         }
 
-        return k < 0 ? "" : s.substr(k, mi);
+        return (start == -1) ? "" : s.substr(start, minLen);
+    
     }
 };
