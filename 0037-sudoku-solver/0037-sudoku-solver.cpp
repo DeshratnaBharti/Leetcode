@@ -1,40 +1,40 @@
 class Solution {
 public:
-      bool isValid(vector<vector<char>>& board,int row,int col,char c){
+    bool isValid(vector<vector<char>>&board,int row,int col,char d){
         for(int i=0;i<9;i++){
-            //check c pahle se col me to nahi hai
-            if(board[i][col]==c) return false;
-            
-            if(board[row][i]==c)  return false;
-            
-            if(board[3*(row/3)+i/3][3*(col/3)+i%3]==c) return false;
+            if(board[i][col]==d){
+                return false;
+            }
+            if(board[row][i]==d) return false;
+        }
+        int s_i = row/3*3;
+        int e_i = col/3*3;
+        for(int k=0;k<3;k++){
+            for(int l =0;l<3;l++){
+                if(board[s_i+k][e_i+l]==d) return false;
+            }
         }
         return true;
     }
-     bool solve(vector<vector<char>>& board){
-        for(int i=0;i<board.size();i++){
-            for(int j=0;j<board[0].size();j++){
+    bool solve(vector<vector<char>>&board){
+        for(int i=0;i<9;i++){
+            for(int j=0;j<9;j++){
                 if(board[i][j]=='.'){
-                    for(char c ='1';c<='9';c++){
-                       if(isValid(board,i,j,c)){
-                            board[i][j]= c;
-                            
-                         if(solve(board)==true) return true;
-                        
-                         else board[i][j]='.';
-                       } 
+                    for(char d= '1';d<='9';d++){
+                        if(isValid(board,i,j,d)){
+                            board[i][j] =d;
+                            if(solve(board)==true) return true;
+                            board[i][j]='.';
+                        }
                     }
                     return false;
                 }
+
             }
-            
         }
         return true;
     }
-  
     void solveSudoku(vector<vector<char>>& board) {
-         solve(board);
-        
+        solve(board);
     }
-    
 };
