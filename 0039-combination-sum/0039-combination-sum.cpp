@@ -8,10 +8,12 @@ public:
         }
        if(target<0 )  return;
        if(idx==candidates.size()) return;
-       solve(idx+1,result,temp,candidates,target);
+         
            temp.push_back(candidates[idx]);
        solve(idx,result,temp,candidates,target-candidates[idx]);
        temp.pop_back();
+       solve(idx+1,result,temp,candidates,target);
+       
    }
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
     vector<int> temp;//store subset
