@@ -2,44 +2,38 @@ class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& arr) {
         int m = arr.size();
-        int n = arr[0].size();
-        int minr = 0, minc = 0; // Minimum row and column
-        int maxr = m - 1, maxc = n - 1; // Maximum row and column
-
-        vector<int> ans; // Result array to store spiral order
-
-        while (minr <= maxr && minc <= maxc) {
-            // Traverse from left to right (Top Row)
-            for (int j = minc; j <= maxc; j++) {
+        int n= arr[0].size();
+        int totalEle = m*n;
+        int minr = 0,minc =0;
+        int maxr = m-1,maxc=n-1;
+        int count =0;
+         vector<int> ans; 
+        while(minr <= maxr and minc <= maxc){
+            
+            for(int j= minc ;j<=maxc and count<totalEle; j++ ){
                 ans.push_back(arr[minr][j]);
+                count++;
             }
-            minr++; // Move top boundary down
-
-            // Traverse from top to bottom (Right Column)
-            for (int i = minr; i <= maxr; i++) {
-                ans.push_back(arr[i][maxc]);
+            minr++;
+             //when we go down
+            for(int j= minr ;j<=maxr and count<totalEle; j++ ){
+                ans.push_back(arr[j][maxc]);
+                count++;
             }
-            maxc--; // Move right boundary left
-
-            // Check if there is still a valid bottom row
-            if (minr <= maxr) {
-                // Traverse from right to left (Bottom Row)
-                for (int j = maxc; j >= minc; j--) {
-                    ans.push_back(arr[maxr][j]);
-                }
-                maxr--; // Move bottom boundary up
+            maxc--;
+             //when we go left
+            for(int j= maxc ;j>=minc and count<totalEle; j-- ){
+                ans.push_back(arr[maxr][j]);
+                count++;
             }
-
-            // Check if there is still a valid left column
-            if (minc <= maxc) {
-                // Traverse from bottom to top (Left Column)
-                for (int i = maxr; i >= minr; i--) {
-                    ans.push_back(arr[i][minc]);
-                }
-                minc++; // Move left boundary right
+            maxr--;
+             //when we go up
+            for(int j= maxr ;j>=minr and count<totalEle; j-- ){
+                ans.push_back(arr[j][minc]);
+                count++;
             }
+            minc++;
         }
-
-        return ans; // Return the spiral order
+        return ans;
     }
 };
