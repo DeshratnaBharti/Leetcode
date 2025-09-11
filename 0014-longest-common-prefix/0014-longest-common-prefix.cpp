@@ -8,11 +8,11 @@ public:
         string first = strs.front();
         string last = strs.back();
         int i = 0;
-
+        string s="";
         while (i < first.size() && first[i] == last[i]) {
-            i++;
+            s+=last[i++];
         }
 
-        return first.substr(0, i);
+        return s;
     }
 };
