@@ -8,27 +8,39 @@
  */
 class Solution {
 public:
-    ListNode *detectCycle(ListNode *head) {
-        if(head == NULL or head->next == NULL) return NULL;
+    ListNode* hasCycle(ListNode *head) {
+        if(head==NULL or head->next==NULL) return NULL;
+        ListNode* slow = head,*fast = head,*t = head;
         bool flag = false;
-        ListNode *slow = head , *fast = head;
-        while(fast and fast->next){
+
+        while(fast->next and fast->next->next){
             slow = slow->next;
             fast = fast->next->next;
-            if(slow == fast){
+             if(fast==slow){
                 flag = true;
                 break;
-            }
+                 
+             }
         }
-        if(flag == false) return NULL;
+        int i=0;
+        
+        if(flag == false) {
+            return NULL;
+        }
         else{
-            ListNode *post = head;
-            while(post != slow){
-                post = post->next;
-                slow = slow->next;
+            
+            while(slow!=t){
+                slow= slow->next;
+                t=t->next;
+                i++;
             }
-return post;
+            return t;
         }
-         // return post;
+        return NULL;
+    }
+    ListNode *detectCycle(ListNode *head) {
+       return hasCycle(head);
+
+        
     }
 };
