@@ -1,16 +1,20 @@
 class Solution {
 public:
     int firstUniqChar(string s) {
-        int arr[26] ={0};
-        int n =s.length();
-        for(int i=0;i<n;i++){
-            char ch = s[i];
-            arr[ch - 'a']++;
+    unordered_map<char, int> count;
+    queue<pair<char, int>> q;
+
+    for (int i = 0; i < s.length(); i++) {
+        char ch = s[i];
+        count[ch]++;
+        q.push({ch, i});
+
+      
+        while (!q.empty() && count[q.front().first] > 1) {
+            q.pop();
         }
-        for(int i=0;i<n;i++){
-            char ch = s[i];
-            if(arr[ch-'a'] == 1) return i;
-        }
-        return -1;
+    }
+
+    return q.empty() ? -1 : q.front().second;
     }
 };
