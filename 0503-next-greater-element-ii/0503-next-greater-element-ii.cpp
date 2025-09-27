@@ -4,7 +4,7 @@ public:
        stack<int>st;
          int n = nums.size();
         vector<int> res(n, -1);
-     //   int n = nums.size();
+     
         for(int i=n * 2 - 1;i>=0;i--){
              int j = i % n;
             while(!st.empty() and st.top() <= nums[j]){
