@@ -1,22 +1,42 @@
 class Solution {
 public:
-    int largestRectangleArea(vector<int>& heights) {
-          int n = heights.size();
-    vector<int> stack(n + 1);  // Stack to store indices of the bars
-    int index = -1;
-    int maxArea = INT_MIN;
-
-    for (int i = 0; i <= n; i++) {
-        int element = (i == n) ? 0 : heights[i];  // Set element to 0 for the last iteration
-        while (index != -1 && heights[stack[index]] > element) {
-            int h = heights[stack[index--]];  // Get the height of the top bar
-            int ps = (index == -1) ? -1 : stack[index];  // Get the index of the previous smaller element
-            int w = i - ps - 1;  // Calculate width
-            maxArea = max(maxArea, h * w);  // Update the maximum area
-        }
-        stack[++index] = i;  // Push the current index onto the stack
-    }
     
-    return (maxArea == INT_MIN) ? 0 : maxArea;  
+      vector<int> findNSE(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> nse(n);
+        stack<int> st;
+        for(int i=n-1; i>=0; i--) {
+            while(!st.empty() && nums[st.top()] >= nums[i])
+                st.pop();
+            nse[i] = st.empty() ? n : st.top();
+            st.push(i);
+        }
+        return nse;
+    }
+
+    vector<int> findPSEE(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> psee(n);
+        stack<int> st;
+        for(int i=0; i<n; i++) {
+            while(!st.empty() && nums[st.top()] > nums[i])
+                st.pop();
+            psee[i] = st.empty() ? -1 : st.top();
+            st.push(i);
+        }
+        return psee;
+    }
+    int largestRectangleArea(vector<int>& nums) {
+        int n= nums.size();
+         vector<int> nse = findNSE(nums);
+        vector<int> psee = findPSEE(nums);
+        int maxi = INT_MIN;
+        for(int i=0;i<n;i++){
+            int height = nums[i];
+            int width =  nse[i] -  psee[i]-1;
+            maxi = max(maxi,(height*width));
+        }
+         return maxi;
+        
     }
 };
