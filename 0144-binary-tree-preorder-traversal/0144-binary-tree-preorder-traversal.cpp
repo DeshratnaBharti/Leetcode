@@ -1,50 +1,29 @@
-
 class Solution {
 public:
     vector<int> preorderTraversal(TreeNode* root) {
-          vector<int> preorder;
-        
-        // If the root is null, return
-        // an empty traversal result
-        if(root == nullptr) {
-            return preorder;
-        }
-        
-        // Create a stack to store
-        // nodes during traversal
-        stack<TreeNode*> st;
-        // Push the root node
-        // onto the stack
-        st.push(root);
-        
-        // Perform iterative preorder traversal
-        while(!st.empty()) {
-            // Get the current node
-            // from the top of the stack
-            root = st.top();
-            // Remove the node
-            // from the stack
-            st.pop();
-            
-            // Add the node's value to
-            // the preorder traversal result
-            preorder.push_back(root->val);
-            
-            // Push the right child
-            // onto the stack if exists
-            if(root->right != nullptr) {
-                st.push(root->right);
-            }
-            
-            // Push the left child onto
-            // the stack if exists
-            if(root->left != nullptr) {
-                st.push(root->left);
+         vector<int>ans;
+        TreeNode* curr = root;
+        while(curr != NULL){
+            if(curr->left == NULL){
+                ans.push_back(curr->val);
+                curr= curr->right;
+            }else{
+                TreeNode* leftChild = curr->left;
+                while(leftChild->right != NULL and leftChild->right != curr){
+                    leftChild = leftChild->right;
+                }
+                if(leftChild->right == NULL){
+                  leftChild->right = curr;
+                   ans.push_back(curr->val);
+                
+                   curr= curr->left;
+                }
+                else{
+                    leftChild->right = NULL;
+                    curr=curr->right;
+                }
             }
         }
-        
-        // Return the preorder
-        // traversal result
-        return preorder;
+        return ans;
     }
 };
