@@ -1,19 +1,30 @@
+
 class Solution {
 public:
-bool exists(TreeNode* root,TreeNode* target){
-    if(root==NULL) return false;
-    if(root==target) return true;
-    return exists(root->left,target) || exists(root->right,target);
+    bool findPath(TreeNode* root, TreeNode* target, vector<TreeNode*>& path) {
+    if (!root) return false;
+
+    path.push_back(root);
+
+    if (root == target) return true;
+
+    if (findPath(root->left, target, path) || findPath(root->right, target, path))
+        return true;
+
+    path.pop_back(); // backtrack
+    return false;
 }
-    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-            if(root==p or root == q) return root;
-            //case 1: p root ke left me exist karta hai aur q root ke right me
-            else if(exists(root->left,p)==true and exists(root->right,q)==true) return root;
-            //case 2: p root ke rigt me exist karta hai aur q root ke left me 
-            else if(exists(root->right,p)==true and exists(root->left,q)==true) return root;
-            //case 3: p root ke left me exist karta hai aur q bhi root ke left me 
-            else if(exists(root->left,p)==true and exists(root->left,q)==true) return lowestCommonAncestor(root->left,p,q);
-            //case 4: p root ke right ke right me exist karta hai aur q bhi root ke right me 
-            else return lowestCommonAncestor(root->right,p,q);
+
+TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+    vector<TreeNode*> path1, path2;
+
+    findPath(root, p, path1);
+    findPath(root, q, path2);
+
+    int i = 0;
+    while (i < path1.size() && i < path2.size() && path1[i] == path2[i])
+        i++;
+
+    return path1[i - 1];
     }
 };
