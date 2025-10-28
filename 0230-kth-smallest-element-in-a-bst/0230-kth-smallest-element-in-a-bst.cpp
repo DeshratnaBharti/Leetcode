@@ -1,17 +1,25 @@
 
 class Solution {
 public:
-    vector<int> result;
-     void inorder(TreeNode* root) {
+   int count = 0;  
+    int result = -1;  
+    void inorder(TreeNode* root, int k) {
         if (root == nullptr) return;
 
-        inorder(root->left);   // Step 1: Left subtree
-        result.push_back(root->val);  // Step 2: Root node
-        inorder(root->right); // Step 3: Right subtree
+        
+        inorder(root->left, k);
+
+       
+        count++;
+        if (count == k) {
+            result = root->val;
+            return;
+        }
+        inorder(root->right, k);
     }
     int kthSmallest(TreeNode* root, int k) {
-       // vector<int> result;
-        inorder(root);
-        return result[k-1];
+    
+        inorder(root,k);
+        return result;
     }
 };
