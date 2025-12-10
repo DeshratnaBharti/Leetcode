@@ -1,41 +1,40 @@
 class Solution {
 public:
-    bool top(  unordered_map<int,vector<int>>&adj, int n ,vector<int>&indegree){
+    bool topoSort( unordered_map<int,vector<int>>&adj,int n,vector<int>&indgree){
         queue<int>que;
-        int count=0;
+        int count =0;
         for(int i=0;i<n;i++){
-            if(indegree[i]==0){
+            if(indgree[i]==0){
+                count++;
                 que.push(i);
             }
         }
         while(!que.empty()){
-            int u=que.front();
+            int u = que.front();
             que.pop();
-             count++;
             for(int &v:adj[u]){
-                indegree[v]--;
-                if(indegree[v]==0) {
-                   
+                indgree[v]--;
+                if(indgree[v]==0){
+                    count++;
                     que.push(v);
-
                 }
             }
-
         }
         if(count==n) return true;
         return false;
+
     }
-    bool canFinish(int nC, vector<vector<int>>& pre) {
+    bool canFinish(int numCo, vector<vector<int>>& prereq) {
         unordered_map<int,vector<int>>adj;
-        vector<int>indegree(nC,0);
-        for(auto &vec:pre){
+        vector<int>indgree(numCo,0);
+        for(auto &vec:prereq){
             int a = vec[0];
             int b = vec[1];
-
             adj[b].push_back(a);
 
-            indegree[a]++;
+            indgree[a]++;
         }
-        return top(adj,nC,indegree);
+            return topoSort(adj,numCo,indgree);
+        
     }
 };
