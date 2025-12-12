@@ -1,40 +1,28 @@
 class Solution {
 public:
-    bool topoSort( unordered_map<int,vector<int>>&adj,int n,vector<int>&indgree){
-        queue<int>que;
-        int count =0;
-        for(int i=0;i<n;i++){
-            if(indgree[i]==0){
-                count++;
-                que.push(i);
-            }
-        }
-        while(!que.empty()){
-            int u = que.front();
-            que.pop();
-            for(int &v:adj[u]){
-                indgree[v]--;
-                if(indgree[v]==0){
-                    count++;
-                    que.push(v);
-                }
-            }
-        }
-        if(count==n) return true;
-        return false;
-
+    bool isCycleDFS(unordered_map<int,vector<int>>&adj,int u,vector<bool>&visited, vector<bool>&inRec){
+     visited[u] = true;
+     inRec[u]= true;
+     for(int &v:adj[u]){
+        if(!visited[v] and isCycleDFS(adj,v,visited,inRec)) return true;
+        else if(inRec[v]==true) return true;
+     }
+     inRec[u]= false;
+     return false;
     }
-    bool canFinish(int numCo, vector<vector<int>>& prereq) {
+    bool canFinish(int nC, vector<vector<int>>& prerequisites) {
         unordered_map<int,vector<int>>adj;
-        vector<int>indgree(numCo,0);
-        for(auto &vec:prereq){
+        vector<bool>visited(nC,false);
+        vector<bool>inRec(nC,false);
+        for(auto &vec:prerequisites){
             int a = vec[0];
             int b = vec[1];
             adj[b].push_back(a);
-
-            indgree[a]++;
         }
-            return topoSort(adj,numCo,indgree);
-        
+        for(int i=0;i<nC;i++){
+            if(visited[i]==false and isCycleDFS(adj,i,visited,inRec)) return false;
+
+        }
+        return true;
     }
 };
