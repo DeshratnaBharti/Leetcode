@@ -1,40 +1,44 @@
 class Solution {
 public:
-    vector<int>topoSort(unordered_map<int,vector<int>>&adj,vector<int>&indegree,int n){
-        queue<int>que;
-        int count =0;
-        vector<int>ans;
-        for(int i=0;i<n;i++){
-            if(indegree[i]==0){
-                count++;
-                ans.push_back(i);
-                que.push(i);
+    bool hascycle;
+    void dfs( unordered_map<int,vector<int>>&adj,int u,vector<bool>&visited,stack<int>&st,vector<int>&inRec){
+        visited[u]= true;
+        inRec[u]= true;
+        for(int &v:adj[u]){
+            if(inRec[v]==true){
+               hascycle = true;
+               return; 
+            }
+            if(!visited[v]){
+                dfs(adj,v,visited,st,inRec);
             }
         }
-        while(!que.empty()){
-            int curr = que.front();
-            que.pop();
-            for(auto &v:adj[curr]){
-                indegree[v]--;
-                if(indegree[v]==0){
-                    count++;
-                    que.push(v);
-                    ans.push_back(v);
-                }
-            }
-        }
-        if(count==n) return ans;
-        return {};
+        st.push(u);
+        inRec[u]=false;
     }
-    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
+    vector<int> findOrder(int nC, vector<vector<int>>& prerequisites) {
         unordered_map<int,vector<int>>adj;
-        vector<int>indegree(numCourses,0);
+        vector<int>inRec(nC,false);
+        vector<bool>visited(nC,false);
         for(auto &vec:prerequisites){
             int a = vec[0];
             int b = vec[1];
+
             adj[b].push_back(a);
-            indegree[a]++;
+
         }
-        return topoSort(adj,indegree,numCourses);
+        stack<int>st;
+        for(int i=0;i<nC;i++){
+            if(!visited[i]) dfs(adj,i,visited,st,inRec);
+        }
+        if(hascycle==true)return {};
+        vector<int>res;
+        while(!st.empty()){
+            res.push_back(st.top());
+            st.pop();
+
+        }
+        return res;
+        
     }
 };
