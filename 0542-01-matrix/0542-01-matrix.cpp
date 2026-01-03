@@ -1,52 +1,35 @@
-#include <vector>
-#include <queue>
-#include <climits>
-
-using namespace std;
-
 class Solution {
 public:
-    typedef pair<int, int> P;
-    vector<vector<int>> directions{{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
-    int m, n;
-
+    vector<vector<int>> directions{{0,1},{0,-1},{1,0},{-1,0}};
+    
     vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
-        m = mat.size();
-        n = mat[0].size();
-        vector<vector<int>> res(m, vector<int>(n, INT_MAX)); // Initialize with INT_MAX
-        queue<P> que;
-
-        // Step 1: Enqueue all `0` cells and set their distance as 0
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (mat[i][j] == 0) {
-                    res[i][j] = 0;
-                    que.push({i, j});
+        int m = mat.size();
+        int n = mat[0].size();
+        queue<pair<int,int>> que;
+        vector<vector<int>> result(m, vector<int>(n, -1));
+        for(int i=0; i<m; i++){
+            for(int j=0; j<n; j++){
+                if(mat[i][j] == 0){
+                    result[i][j] = 0;
+                    que.push({i,j});
                 }
             }
         }
-
-        // Step 2: Perform BFS
-        while (!que.empty()) {
-            P curr = que.front();
+        while(!que.empty()){
+            auto [i, j] = que.front();
             que.pop();
-            int i = curr.first;
-            int j = curr.second;
-
-            for (auto& dir : directions) {
+            
+            for(auto &dir : directions){
                 int new_i = i + dir[0];
                 int new_j = j + dir[1];
-
-                // Check boundary conditions and relax distances
-                if (new_i >= 0 && new_i < m && new_j >= 0 && new_j < n) {
-                    if (res[new_i][new_j] > res[i][j] + 1) {
-                        res[new_i][new_j] = res[i][j] + 1;
-                        que.push({new_i, new_j});
-                    }
+                
+                if(new_i >= 0 && new_i < m && new_j >= 0 && new_j < n && result[new_i][new_j] == -1){
+                    result[new_i][new_j] = result[i][j] + 1;
+                    que.push({new_i, new_j});
                 }
             }
         }
-
-        return res;
+        
+        return result;
     }
 };
