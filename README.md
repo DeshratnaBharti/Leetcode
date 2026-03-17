@@ -124,3 +124,15 @@ Feel free to fork and raise a Pull Request.
 ## ✨ Created by [Deshratna Bharti](https://github.com/DeshratnaBharti)
 
 > “Code daily. Improve consistently. Crack confidently.” 💪
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0605-can-place-flowers](https://github.com/DeshratnaBharti/Leetcode/tree/main/0605-can-place-flowers/) | Easy |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0605-can-place-flowers](https://github.com/DeshratnaBharti/Leetcode/tree/main/0605-can-place-flowers/) | Easy |
+<!---LeetCode Topics End-->
