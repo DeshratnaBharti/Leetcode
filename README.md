@@ -134,6 +134,7 @@ Feel free to fork and raise a Pull Request.
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0605-can-place-flowers](https://github.com/DeshratnaBharti/Leetcode/tree/main/0605-can-place-flowers/) | Easy |
 | [3232-find-if-digit-game-can-be-won](https://github.com/DeshratnaBharti/Leetcode/tree/main/3232-find-if-digit-game-can-be-won/) | Easy |
+| [3233-find-the-count-of-numbers-which-are-not-special](https://github.com/DeshratnaBharti/Leetcode/tree/main/3233-find-the-count-of-numbers-which-are-not-special/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -149,6 +150,7 @@ Feel free to fork and raise a Pull Request.
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0509-fibonacci-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0509-fibonacci-number/) | Easy |
 | [3232-find-if-digit-game-can-be-won](https://github.com/DeshratnaBharti/Leetcode/tree/main/3232-find-if-digit-game-can-be-won/) | Easy |
+| [3233-find-the-count-of-numbers-which-are-not-special](https://github.com/DeshratnaBharti/Leetcode/tree/main/3233-find-the-count-of-numbers-which-are-not-special/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -173,4 +175,8 @@ Feel free to fork and raise a Pull Request.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0509-fibonacci-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0509-fibonacci-number/) | Easy |
+## Number Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3233-find-the-count-of-numbers-which-are-not-special](https://github.com/DeshratnaBharti/Leetcode/tree/main/3233-find-the-count-of-numbers-which-are-not-special/) | Medium |
 <!---LeetCode Topics End-->
