@@ -132,6 +132,7 @@ Feel free to fork and raise a Pull Request.
 | ------- | ------- |
 | [0001-two-sum](https://github.com/DeshratnaBharti/Leetcode/tree/main/0001-two-sum/) | Easy |
 | [0053-maximum-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0053-maximum-subarray/) | Medium |
+| [0152-maximum-product-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0605-can-place-flowers](https://github.com/DeshratnaBharti/Leetcode/tree/main/0605-can-place-flowers/) | Easy |
 | [3232-find-if-digit-game-can-be-won](https://github.com/DeshratnaBharti/Leetcode/tree/main/3232-find-if-digit-game-can-be-won/) | Easy |
@@ -168,6 +169,7 @@ Feel free to fork and raise a Pull Request.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0053-maximum-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0053-maximum-subarray/) | Medium |
+| [0152-maximum-product-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0509-fibonacci-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0509-fibonacci-number/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
