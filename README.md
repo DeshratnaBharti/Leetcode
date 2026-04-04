@@ -194,5 +194,10 @@ Feel free to fork and raise a Pull Request.
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0344-reverse-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0344-reverse-string/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0344-reverse-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0344-reverse-string/) | Easy |
 <!---LeetCode Topics End-->
