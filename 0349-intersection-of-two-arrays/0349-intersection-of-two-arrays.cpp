@@ -15,7 +15,10 @@ public:
                 ans.insert(a);
             }
         }
-        vector<int>res(ans.begin(),ans.end());
+         vector<int>res;
+         for(auto a:ans){
+            res.push_back(a);
+         }
         return res;
         
     }
