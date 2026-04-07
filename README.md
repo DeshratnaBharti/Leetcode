@@ -132,6 +132,7 @@ Feel free to fork and raise a Pull Request.
 | ------- | ------- |
 | [0001-two-sum](https://github.com/DeshratnaBharti/Leetcode/tree/main/0001-two-sum/) | Easy |
 | [0053-maximum-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0053-maximum-subarray/) | Medium |
+| [0075-sort-colors](https://github.com/DeshratnaBharti/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
@@ -174,6 +175,7 @@ Feel free to fork and raise a Pull Request.
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0075-sort-colors](https://github.com/DeshratnaBharti/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
 ## Dynamic Programming
@@ -202,6 +204,7 @@ Feel free to fork and raise a Pull Request.
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0075-sort-colors](https://github.com/DeshratnaBharti/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0151-reverse-words-in-a-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0151-reverse-words-in-a-string/) | Medium |
 | [0344-reverse-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0344-reverse-string/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
