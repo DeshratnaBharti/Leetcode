@@ -136,6 +136,7 @@ Feel free to fork and raise a Pull Request.
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0605-can-place-flowers](https://github.com/DeshratnaBharti/Leetcode/tree/main/0605-can-place-flowers/) | Easy |
+| [0704-binary-search](https://github.com/DeshratnaBharti/Leetcode/tree/main/0704-binary-search/) | Easy |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/DeshratnaBharti/Leetcode/tree/main/1823-find-the-winner-of-the-circular-game/) | Medium |
 | [3232-find-if-digit-game-can-be-won](https://github.com/DeshratnaBharti/Leetcode/tree/main/3232-find-if-digit-game-can-be-won/) | Easy |
 | [3233-find-the-count-of-numbers-which-are-not-special](https://github.com/DeshratnaBharti/Leetcode/tree/main/3233-find-the-count-of-numbers-which-are-not-special/) | Medium |
@@ -165,6 +166,7 @@ Feel free to fork and raise a Pull Request.
 | ------- | ------- |
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
+| [0704-binary-search](https://github.com/DeshratnaBharti/Leetcode/tree/main/0704-binary-search/) | Easy |
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
