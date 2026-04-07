@@ -154,6 +154,7 @@ Feel free to fork and raise a Pull Request.
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0009-palindrome-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0009-palindrome-number/) | Easy |
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0509-fibonacci-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0509-fibonacci-number/) | Easy |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/DeshratnaBharti/Leetcode/tree/main/1823-find-the-winner-of-the-circular-game/) | Medium |
