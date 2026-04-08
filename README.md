@@ -137,6 +137,7 @@ Feel free to fork and raise a Pull Request.
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0287-find-the-duplicate-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0287-find-the-duplicate-number/) | Medium |
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
+| [0560-subarray-sum-equals-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0605-can-place-flowers](https://github.com/DeshratnaBharti/Leetcode/tree/main/0605-can-place-flowers/) | Easy |
 | [0704-binary-search](https://github.com/DeshratnaBharti/Leetcode/tree/main/0704-binary-search/) | Easy |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/DeshratnaBharti/Leetcode/tree/main/1823-find-the-winner-of-the-circular-game/) | Medium |
@@ -154,6 +155,7 @@ Feel free to fork and raise a Pull Request.
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0387-first-unique-character-in-a-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0387-first-unique-character-in-a-string/) | Easy |
+| [0560-subarray-sum-equals-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -241,4 +243,8 @@ Feel free to fork and raise a Pull Request.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/DeshratnaBharti/Leetcode/tree/main/1823-find-the-winner-of-the-circular-game/) | Medium |
+## Prefix Sum
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0560-subarray-sum-equals-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
 <!---LeetCode Topics End-->
