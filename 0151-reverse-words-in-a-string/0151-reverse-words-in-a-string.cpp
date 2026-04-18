@@ -1,36 +1,12 @@
 class Solution {
 public:
     string reverseWords(string s) {
-        stack<char>st;
-        int n = s.length();
-        for(int i=0;i<n;i++){
-            char ch = s[i];
-            if(ch==' ')
-            st.push('$');
-            else st.push(s[i]);
+        stringstream ss(s);
+        string w,ans = "";
+        while(ss>>w){
+            ans = w + " "+ ans;
         }
-        string finalAns = "",t ="";
-        while(!st.empty()){
-            char ch = st.top();
-            st.pop();
-           
-           if(ch == '$'){
-               if(!t.empty()){
-                 reverse(t.begin(),t.end());
-                 if (!finalAns.empty()) finalAns += " ";
-                 finalAns += t ;
-                 t = "";
-               }
-            }
-            if(ch!='$')t = t + ch;
-
-        }
-        if(!t.empty()){
-            reverse(t.begin(),t.end());
-             if (!finalAns.empty()) finalAns += " ";
-            finalAns += t;
-        }
-        return finalAns;
-        
+        while(!ans.empty() and ans.back()==' ')ans.pop_back();
+        return ans;
     }
 };
