@@ -5,11 +5,8 @@ public:
         int n = s.length();
         for(int i=0;i<n;i++){
             char ch = s[i];
-            if(ch==' '){
-                 if (!st.empty() && st.top() != '$')
-                    st.push('$');
-            }
-           // st.push('$');
+            if(ch==' ')
+            st.push('$');
             else st.push(s[i]);
         }
         string finalAns = "",t ="";
@@ -20,7 +17,8 @@ public:
            if(ch == '$'){
                if(!t.empty()){
                  reverse(t.begin(),t.end());
-                 finalAns += t + " ";
+                 if (!finalAns.empty()) finalAns += " ";
+                 finalAns += t ;
                  t = "";
                }
             }
@@ -29,6 +27,7 @@ public:
         }
         if(!t.empty()){
             reverse(t.begin(),t.end());
+             if (!finalAns.empty()) finalAns += " ";
             finalAns += t;
         }
         return finalAns;
