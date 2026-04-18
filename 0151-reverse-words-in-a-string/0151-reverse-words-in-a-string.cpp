@@ -3,22 +3,24 @@ public:
     string reverseWords(string s) {
         reverse(s.begin(),s.end());
         int n = s.length();
-        string t = "";
-        int i=0,j=0;
+        //string t = "";
+        int i=0,j=0,l=0;
         while(j<n){
             while(j<n and s[j] ==' ') j++;
-            i = j;
-            while(j<n and s[j]!= ' ')j++;
-            reverse(s.begin()+i,s.begin()+j);
-            if(!t.empty() ) t += " ";
-            t += s.substr(i,j-i);
-            
-            //j++;
+            if (j >= n) break;
+
+            //int start = l;
+            if(l!=0) s[l++] = ' ';
+            int start = l;
+            while(j<n and s[j]!= ' '){
+                s[l++]=s[j++];
+            }
+            reverse(s.begin()+start,s.begin()+l);
+           
         }
-        //reverse(s.begin()+i,s.begin()+j);
-           // t += s.substr(i,j-i+1);
-           while(!t.empty() and t.back()==' ') t.pop_back();
-            return t;
+      
+            s.resize(l);
+            return s;
         
     }
 };
