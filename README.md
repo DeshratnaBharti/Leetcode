@@ -140,6 +140,7 @@ Feel free to fork and raise a Pull Request.
 | [0560-subarray-sum-equals-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0605-can-place-flowers](https://github.com/DeshratnaBharti/Leetcode/tree/main/0605-can-place-flowers/) | Easy |
 | [0704-binary-search](https://github.com/DeshratnaBharti/Leetcode/tree/main/0704-binary-search/) | Easy |
+| [0974-subarray-sums-divisible-by-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
 | [1207-unique-number-of-occurrences](https://github.com/DeshratnaBharti/Leetcode/tree/main/1207-unique-number-of-occurrences/) | Easy |
 | [1636-sort-array-by-increasing-frequency](https://github.com/DeshratnaBharti/Leetcode/tree/main/1636-sort-array-by-increasing-frequency/) | Easy |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/DeshratnaBharti/Leetcode/tree/main/1823-find-the-winner-of-the-circular-game/) | Medium |
@@ -159,6 +160,7 @@ Feel free to fork and raise a Pull Request.
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0387-first-unique-character-in-a-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0387-first-unique-character-in-a-string/) | Easy |
 | [0560-subarray-sum-equals-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
+| [0974-subarray-sums-divisible-by-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
 | [1207-unique-number-of-occurrences](https://github.com/DeshratnaBharti/Leetcode/tree/main/1207-unique-number-of-occurrences/) | Easy |
 | [1636-sort-array-by-increasing-frequency](https://github.com/DeshratnaBharti/Leetcode/tree/main/1636-sort-array-by-increasing-frequency/) | Easy |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
@@ -254,6 +256,7 @@ Feel free to fork and raise a Pull Request.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0560-subarray-sum-equals-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
+| [0974-subarray-sums-divisible-by-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
