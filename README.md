@@ -156,6 +156,7 @@ Feel free to fork and raise a Pull Request.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/DeshratnaBharti/Leetcode/tree/main/0001-two-sum/) | Easy |
+| [0003-longest-substring-without-repeating-characters](https://github.com/DeshratnaBharti/Leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0387-first-unique-character-in-a-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0387-first-unique-character-in-a-string/) | Easy |
@@ -227,6 +228,7 @@ Feel free to fork and raise a Pull Request.
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/DeshratnaBharti/Leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0151-reverse-words-in-a-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0151-reverse-words-in-a-string/) | Medium |
 | [0344-reverse-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0344-reverse-string/) | Easy |
 | [0387-first-unique-character-in-a-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0387-first-unique-character-in-a-string/) | Easy |
@@ -260,5 +262,6 @@ Feel free to fork and raise a Pull Request.
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/DeshratnaBharti/Leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
 <!---LeetCode Topics End-->
