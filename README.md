@@ -132,6 +132,7 @@ Feel free to fork and raise a Pull Request.
 | ------- | ------- |
 | [0001-two-sum](https://github.com/DeshratnaBharti/Leetcode/tree/main/0001-two-sum/) | Easy |
 | [0053-maximum-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0053-maximum-subarray/) | Medium |
+| [0056-merge-intervals](https://github.com/DeshratnaBharti/Leetcode/tree/main/0056-merge-intervals/) | Medium |
 | [0075-sort-colors](https://github.com/DeshratnaBharti/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0229-majority-element-ii](https://github.com/DeshratnaBharti/Leetcode/tree/main/0229-majority-element-ii/) | Medium |
@@ -193,6 +194,7 @@ Feel free to fork and raise a Pull Request.
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0056-merge-intervals](https://github.com/DeshratnaBharti/Leetcode/tree/main/0056-merge-intervals/) | Medium |
 | [0075-sort-colors](https://github.com/DeshratnaBharti/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0229-majority-element-ii](https://github.com/DeshratnaBharti/Leetcode/tree/main/0229-majority-element-ii/) | Medium |
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
