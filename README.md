@@ -133,6 +133,7 @@ Feel free to fork and raise a Pull Request.
 | [0001-two-sum](https://github.com/DeshratnaBharti/Leetcode/tree/main/0001-two-sum/) | Easy |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/DeshratnaBharti/Leetcode/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0035-search-insert-position](https://github.com/DeshratnaBharti/Leetcode/tree/main/0035-search-insert-position/) | Easy |
+| [0049-group-anagrams](https://github.com/DeshratnaBharti/Leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0053-maximum-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0053-maximum-subarray/) | Medium |
 | [0056-merge-intervals](https://github.com/DeshratnaBharti/Leetcode/tree/main/0056-merge-intervals/) | Medium |
 | [0075-sort-colors](https://github.com/DeshratnaBharti/Leetcode/tree/main/0075-sort-colors/) | Medium |
@@ -162,6 +163,7 @@ Feel free to fork and raise a Pull Request.
 | ------- | ------- |
 | [0001-two-sum](https://github.com/DeshratnaBharti/Leetcode/tree/main/0001-two-sum/) | Easy |
 | [0003-longest-substring-without-repeating-characters](https://github.com/DeshratnaBharti/Leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
+| [0049-group-anagrams](https://github.com/DeshratnaBharti/Leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0229-majority-element-ii](https://github.com/DeshratnaBharti/Leetcode/tree/main/0229-majority-element-ii/) | Medium |
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
@@ -198,6 +200,7 @@ Feel free to fork and raise a Pull Request.
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0049-group-anagrams](https://github.com/DeshratnaBharti/Leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0056-merge-intervals](https://github.com/DeshratnaBharti/Leetcode/tree/main/0056-merge-intervals/) | Medium |
 | [0075-sort-colors](https://github.com/DeshratnaBharti/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0229-majority-element-ii](https://github.com/DeshratnaBharti/Leetcode/tree/main/0229-majority-element-ii/) | Medium |
@@ -241,6 +244,7 @@ Feel free to fork and raise a Pull Request.
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/DeshratnaBharti/Leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0020-valid-parentheses](https://github.com/DeshratnaBharti/Leetcode/tree/main/0020-valid-parentheses/) | Easy |
+| [0049-group-anagrams](https://github.com/DeshratnaBharti/Leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0151-reverse-words-in-a-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0151-reverse-words-in-a-string/) | Medium |
 | [0344-reverse-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0344-reverse-string/) | Easy |
 | [0387-first-unique-character-in-a-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0387-first-unique-character-in-a-string/) | Easy |
