@@ -1,18 +1,16 @@
 class Solution {
 public:
-    int n;
-    int t[101];
-    int solve(vector<int>&nums,int i){
-        if(i>=n)return 0;
-        if(t[i] != -1) return t[i];
-        int take = nums[i]+solve(nums,i+2);
-        int not_take = solve(nums,i+1);
-        return t[i]=max(take,not_take);
-    }
     int rob(vector<int>& nums) {
-         n = nums.size();
-         memset(t,-1,sizeof(t));
-       return solve(nums,0);
-        
+        int n = nums.size();
+        vector<int>t(n+1,0);
+        t[0] =0;
+        t[1] = nums[0];
+        for(int i=2;i<=n;i++){
+            int take = nums[i-1] + t[i-2];
+           int  not_take = t[i-1];
+            t[i] = max(take,not_take);
+        }
+        return t[n];
+
     }
 };
