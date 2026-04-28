@@ -314,4 +314,20 @@ Feel free to fork and raise a Pull Request.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0083-remove-duplicates-from-sorted-list](https://github.com/DeshratnaBharti/Leetcode/tree/main/0083-remove-duplicates-from-sorted-list/) | Easy |
+## Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0199-binary-tree-right-side-view](https://github.com/DeshratnaBharti/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
+## Depth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0199-binary-tree-right-side-view](https://github.com/DeshratnaBharti/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
+## Breadth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0199-binary-tree-right-side-view](https://github.com/DeshratnaBharti/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
+## Binary Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0199-binary-tree-right-side-view](https://github.com/DeshratnaBharti/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 <!---LeetCode Topics End-->
