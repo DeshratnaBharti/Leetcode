@@ -146,6 +146,7 @@ Feel free to fork and raise a Pull Request.
 | [0283-move-zeroes](https://github.com/DeshratnaBharti/Leetcode/tree/main/0283-move-zeroes/) | Easy |
 | [0287-find-the-duplicate-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0287-find-the-duplicate-number/) | Medium |
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
+| [0435-non-overlapping-intervals](https://github.com/DeshratnaBharti/Leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0605-can-place-flowers](https://github.com/DeshratnaBharti/Leetcode/tree/main/0605-can-place-flowers/) | Easy |
 | [0704-binary-search](https://github.com/DeshratnaBharti/Leetcode/tree/main/0704-binary-search/) | Easy |
@@ -160,6 +161,7 @@ Feel free to fork and raise a Pull Request.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0011-container-with-most-water](https://github.com/DeshratnaBharti/Leetcode/tree/main/0011-container-with-most-water/) | Medium |
+| [0435-non-overlapping-intervals](https://github.com/DeshratnaBharti/Leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0605-can-place-flowers](https://github.com/DeshratnaBharti/Leetcode/tree/main/0605-can-place-flowers/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/DeshratnaBharti/Leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 ## Hash Table
@@ -210,6 +212,7 @@ Feel free to fork and raise a Pull Request.
 | [0229-majority-element-ii](https://github.com/DeshratnaBharti/Leetcode/tree/main/0229-majority-element-ii/) | Medium |
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
+| [0435-non-overlapping-intervals](https://github.com/DeshratnaBharti/Leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [1636-sort-array-by-increasing-frequency](https://github.com/DeshratnaBharti/Leetcode/tree/main/1636-sort-array-by-increasing-frequency/) | Easy |
 ## Dynamic Programming
 | Problem Name | Difficulty |
@@ -217,6 +220,7 @@ Feel free to fork and raise a Pull Request.
 | [0053-maximum-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0053-maximum-subarray/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0198-house-robber](https://github.com/DeshratnaBharti/Leetcode/tree/main/0198-house-robber/) | Medium |
+| [0435-non-overlapping-intervals](https://github.com/DeshratnaBharti/Leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0509-fibonacci-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0509-fibonacci-number/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
