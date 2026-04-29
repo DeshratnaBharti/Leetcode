@@ -183,6 +183,7 @@ Feel free to fork and raise a Pull Request.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0009-palindrome-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0009-palindrome-number/) | Easy |
+| [0062-unique-paths](https://github.com/DeshratnaBharti/Leetcode/tree/main/0062-unique-paths/) | Medium |
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0507-perfect-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0507-perfect-number/) | Easy |
 | [0509-fibonacci-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0509-fibonacci-number/) | Easy |
@@ -220,6 +221,7 @@ Feel free to fork and raise a Pull Request.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0053-maximum-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0053-maximum-subarray/) | Medium |
+| [0062-unique-paths](https://github.com/DeshratnaBharti/Leetcode/tree/main/0062-unique-paths/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0198-house-robber](https://github.com/DeshratnaBharti/Leetcode/tree/main/0198-house-robber/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/DeshratnaBharti/Leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
@@ -342,4 +344,8 @@ Feel free to fork and raise a Pull Request.
 | [0104-maximum-depth-of-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/DeshratnaBharti/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0222-count-complete-tree-nodes](https://github.com/DeshratnaBharti/Leetcode/tree/main/0222-count-complete-tree-nodes/) | Easy |
+## Combinatorics
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0062-unique-paths](https://github.com/DeshratnaBharti/Leetcode/tree/main/0062-unique-paths/) | Medium |
 <!---LeetCode Topics End-->
