@@ -324,6 +324,7 @@ Feel free to fork and raise a Pull Request.
 | ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/DeshratnaBharti/Leetcode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
 | [0104-maximum-depth-of-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
+| [0110-balanced-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/DeshratnaBharti/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0222-count-complete-tree-nodes](https://github.com/DeshratnaBharti/Leetcode/tree/main/0222-count-complete-tree-nodes/) | Easy |
 ## Depth-First Search
@@ -331,6 +332,7 @@ Feel free to fork and raise a Pull Request.
 | ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/DeshratnaBharti/Leetcode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
 | [0104-maximum-depth-of-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
+| [0110-balanced-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/DeshratnaBharti/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -342,6 +344,7 @@ Feel free to fork and raise a Pull Request.
 | ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/DeshratnaBharti/Leetcode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
 | [0104-maximum-depth-of-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
+| [0110-balanced-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/DeshratnaBharti/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0222-count-complete-tree-nodes](https://github.com/DeshratnaBharti/Leetcode/tree/main/0222-count-complete-tree-nodes/) | Easy |
 ## Combinatorics
