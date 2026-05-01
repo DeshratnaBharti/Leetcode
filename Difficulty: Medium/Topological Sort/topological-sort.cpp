@@ -1,37 +1,51 @@
 
 class Solution {
   public:
-    void dfs(int u,vector<bool>&vis,vector<vector<int>>&adj,stack<int>&st){
-        vis[u] = true;
-        for(auto &v:adj[u]){
+    void bfs(vector<int>&ind,vector<vector<int>>&adj,vector<int>&res,queue<int>&que){
+        
+        
+        while(!que.empty()){
+            int curr = que.front();
+            que.pop();
+            res.push_back(curr);
+            for(auto &v:adj[curr]){
+                ind[v]--;
             
-            if(!vis[v]){
-               
-                dfs(v,vis,adj,st);
-                
-            }
+                if(ind[v]==0){
+                 //res.push_back(v);
+                    que.push(v);
+                    
+                }
         }
-        st.push(u);
+            
+        }
+        
+        
     }
     vector<int> topoSort(int V, vector<vector<int>>& edges) {
         vector<vector<int>> adj(V);
         for (auto &edge : edges) {
             adj[edge[0]].push_back(edge[1]); 
         }
-      
-        vector<int>result;
-        stack<int>st;
-        vector<bool>vis(V,false);
-        for(int i=0;i<V;i++){
-            if(!vis[i]){
-                dfs(i,vis,adj,st);
+        vector<int>ind(V,0);
+        for(int u =0;u<V;u++){
+            for(int &v:adj[u]){
+                ind[v]++;
             }
         }
-        while(!st.empty()){
-            result.push_back(st.top());
-            st.pop();
+      
+        vector<int>res;
+        queue<int>que;
+        vector<bool>vis(V,false);
+        for(int i=0;i<V;i++){
+            if(ind[i]==0){
+                que.push(i);
+                
+            }
         }
-        return result;
+        bfs(ind,adj,res,que);
+       
+        return res;
         
     }
 };
