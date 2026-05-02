@@ -1,28 +1,39 @@
 class Solution {
 public:
-    bool isCycleDFS(unordered_map<int,vector<int>>&adj,int u,vector<bool>&visited, vector<bool>&inRec){
-     visited[u] = true;
-     inRec[u]= true;
-     for(int &v:adj[u]){
-        if(!visited[v] and isCycleDFS(adj,v,visited,inRec)) return true;
-        else if(inRec[v]==true) return true;
-     }
-     inRec[u]= false;
-     return false;
-    }
-    bool canFinish(int nC, vector<vector<int>>& prerequisites) {
+    bool canFinish(int numCourses, vector<vector<int>>& arr) {
+        
         unordered_map<int,vector<int>>adj;
-        vector<bool>visited(nC,false);
-        vector<bool>inRec(nC,false);
-        for(auto &vec:prerequisites){
-            int a = vec[0];
-            int b = vec[1];
-            adj[b].push_back(a);
+        //int n = arr.size();
+        //int m = arr[0].size();
+       
+        for(auto &a:arr){
+            int b = a[0];
+            int c = a[1];
+            adj[c].push_back(b);
         }
-        for(int i=0;i<nC;i++){
-            if(visited[i]==false and isCycleDFS(adj,i,visited,inRec)) return false;
-
+        vector<int>inDeg(numCourses,0);
+        for(int i=0;i<numCourses;i++){
+            for(auto &v:adj[i]){
+                inDeg[v]++;
+            }
         }
-        return true;
+        queue<int>que;
+        for(int i=0;i<numCourses;i++){
+            if(inDeg[i]==0){
+                que.push(i);
+            }
+        }
+        int count =0;
+        while(!que.empty()){
+            auto curr = que.front();
+            que.pop();
+            count++;
+            for(auto &v:adj[curr]){
+                inDeg[v]--;
+                if(inDeg[v]==0)  que.push(v);
+            }
+        }
+        if(count==numCourses) return true;
+        return false;
     }
 };
