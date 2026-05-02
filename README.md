@@ -260,6 +260,7 @@ Feel free to fork and raise a Pull Request.
 | [0020-valid-parentheses](https://github.com/DeshratnaBharti/Leetcode/tree/main/0020-valid-parentheses/) | Easy |
 | [0049-group-anagrams](https://github.com/DeshratnaBharti/Leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0151-reverse-words-in-a-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0151-reverse-words-in-a-string/) | Medium |
+| [0257-binary-tree-paths](https://github.com/DeshratnaBharti/Leetcode/tree/main/0257-binary-tree-paths/) | Easy |
 | [0344-reverse-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0344-reverse-string/) | Easy |
 | [0387-first-unique-character-in-a-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0387-first-unique-character-in-a-string/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/DeshratnaBharti/Leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
@@ -327,6 +328,7 @@ Feel free to fork and raise a Pull Request.
 | [0110-balanced-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/DeshratnaBharti/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0222-count-complete-tree-nodes](https://github.com/DeshratnaBharti/Leetcode/tree/main/0222-count-complete-tree-nodes/) | Easy |
+| [0257-binary-tree-paths](https://github.com/DeshratnaBharti/Leetcode/tree/main/0257-binary-tree-paths/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 ## Depth-First Search
 | Problem Name | Difficulty |
@@ -337,6 +339,7 @@ Feel free to fork and raise a Pull Request.
 | [0199-binary-tree-right-side-view](https://github.com/DeshratnaBharti/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0207-course-schedule](https://github.com/DeshratnaBharti/Leetcode/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/DeshratnaBharti/Leetcode/tree/main/0210-course-schedule-ii/) | Medium |
+| [0257-binary-tree-paths](https://github.com/DeshratnaBharti/Leetcode/tree/main/0257-binary-tree-paths/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0547-number-of-provinces](https://github.com/DeshratnaBharti/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
 ## Breadth-First Search
@@ -355,6 +358,7 @@ Feel free to fork and raise a Pull Request.
 | [0110-balanced-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/DeshratnaBharti/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0222-count-complete-tree-nodes](https://github.com/DeshratnaBharti/Leetcode/tree/main/0222-count-complete-tree-nodes/) | Easy |
+| [0257-binary-tree-paths](https://github.com/DeshratnaBharti/Leetcode/tree/main/0257-binary-tree-paths/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 ## Combinatorics
 | Problem Name | Difficulty |
@@ -375,4 +379,8 @@ Feel free to fork and raise a Pull Request.
 | ------- | ------- |
 | [0207-course-schedule](https://github.com/DeshratnaBharti/Leetcode/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/DeshratnaBharti/Leetcode/tree/main/0210-course-schedule-ii/) | Medium |
+## Backtracking
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0257-binary-tree-paths](https://github.com/DeshratnaBharti/Leetcode/tree/main/0257-binary-tree-paths/) | Easy |
 <!---LeetCode Topics End-->
