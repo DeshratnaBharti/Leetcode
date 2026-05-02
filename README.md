@@ -335,6 +335,7 @@ Feel free to fork and raise a Pull Request.
 | [0104-maximum-depth-of-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0110-balanced-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/DeshratnaBharti/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
+| [0207-course-schedule](https://github.com/DeshratnaBharti/Leetcode/tree/main/0207-course-schedule/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0547-number-of-provinces](https://github.com/DeshratnaBharti/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
 ## Breadth-First Search
@@ -342,6 +343,7 @@ Feel free to fork and raise a Pull Request.
 | ------- | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/DeshratnaBharti/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
+| [0207-course-schedule](https://github.com/DeshratnaBharti/Leetcode/tree/main/0207-course-schedule/) | Medium |
 | [0547-number-of-provinces](https://github.com/DeshratnaBharti/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
@@ -363,5 +365,10 @@ Feel free to fork and raise a Pull Request.
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0207-course-schedule](https://github.com/DeshratnaBharti/Leetcode/tree/main/0207-course-schedule/) | Medium |
 | [0547-number-of-provinces](https://github.com/DeshratnaBharti/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
+## Topological Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0207-course-schedule](https://github.com/DeshratnaBharti/Leetcode/tree/main/0207-course-schedule/) | Medium |
 <!---LeetCode Topics End-->
