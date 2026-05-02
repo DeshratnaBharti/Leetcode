@@ -336,11 +336,13 @@ Feel free to fork and raise a Pull Request.
 | [0110-balanced-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/DeshratnaBharti/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [0547-number-of-provinces](https://github.com/DeshratnaBharti/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/DeshratnaBharti/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
+| [0547-number-of-provinces](https://github.com/DeshratnaBharti/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -354,4 +356,12 @@ Feel free to fork and raise a Pull Request.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0062-unique-paths](https://github.com/DeshratnaBharti/Leetcode/tree/main/0062-unique-paths/) | Medium |
+## Union-Find
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0547-number-of-provinces](https://github.com/DeshratnaBharti/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0547-number-of-provinces](https://github.com/DeshratnaBharti/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
 <!---LeetCode Topics End-->
