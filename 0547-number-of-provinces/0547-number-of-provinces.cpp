@@ -1,10 +1,17 @@
 class Solution {
 public:
-    void dfs(unordered_map<int,vector<int>>&adj,int u,vector<bool>&vis){
-        vis[u] = true;
-        for(auto &v:adj[u]){
-            if(!vis[v]){
-                dfs(adj,v,vis);
+    void bfs(unordered_map<int,vector<int>>&adj,int u,vector<bool>&vis){
+       queue<int>que;
+       que.push(u);
+       vis[u] = true;
+        while(!que.empty()){
+            auto curr = que.front();
+            que.pop();
+            for(auto &v:adj[curr]){
+                if(!vis[v]){
+                    vis[v] = true;
+                    que.push(v);
+                }
             }
         }
     }
@@ -24,7 +31,7 @@ public:
         vector<bool>vis(n,false);
         for(int i=0;i<n;i++){
             if(!vis[i]){
-                dfs(adj,i,vis);
+                bfs(adj,i,vis);
                 count++;
             }
         }
