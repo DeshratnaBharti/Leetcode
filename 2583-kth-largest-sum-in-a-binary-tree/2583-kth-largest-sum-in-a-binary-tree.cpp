@@ -21,7 +21,6 @@ public:
 
             s.push_back(sum);
         }
-
         sort(s.begin(),s.end());
         if (k > s.size()) return -1;
         return s[s.size() - k];
