@@ -1,27 +1,24 @@
 class Solution {
 public:
     int n;
-    int t[201][101];
-    bool help(vector<int>& nums,int s,int i){
-        
-        if (s == 0) return true; // Base case: subset with required sum found
-        if (i == n || s < 0) return false;
-        if(t[i][s] != -1) return t[i][s];
-        bool take,not_take;
-       
-         take = help(nums,s-nums[i],i+1);
-         not_take = help(nums,s,i+1);
-        
-        return t[i][s]=take or not_take;
+    vector<vector<int>>dp;
+    bool solve(vector<int>&nums,int i,int sum,int tgt){
+        if(i>=n or sum>tgt) return false;
+        if(sum==tgt ) return true;
+        if(dp[i][sum] != -1) return dp[i][sum];
+        bool take = solve(nums,i+1,sum + nums[i],tgt);
+        bool skip = solve(nums,i+1,sum,tgt);
+        return dp[i][sum]=take or skip ;
+
+
     }
     bool canPartition(vector<int>& nums) {
-         n =nums.size();
-        int sum=0;
-        memset(t,-1,sizeof(t));
-        for(auto &num:nums){
-            sum+=num;
-        }
-        if(sum %2 != 0) return false;
-        return help(nums,sum/2,0);
+        n = nums.size(); 
+         
+        int s= accumulate(nums.begin(),nums.end(),0);
+        if(s%2 !=0) return false;
+        int tgt = s/2;
+        dp.resize(n,vector<int>(tgt+1,-1));
+        return solve(nums,0,0,tgt);
     }
 };
