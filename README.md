@@ -307,6 +307,7 @@ Feel free to fork and raise a Pull Request.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0239-sliding-window-maximum](https://github.com/DeshratnaBharti/Leetcode/tree/main/0239-sliding-window-maximum/) | Hard |
+| [0743-network-delay-time](https://github.com/DeshratnaBharti/Leetcode/tree/main/0743-network-delay-time/) | Medium |
 ## Monotonic Queue
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -346,6 +347,7 @@ Feel free to fork and raise a Pull Request.
 | [0257-binary-tree-paths](https://github.com/DeshratnaBharti/Leetcode/tree/main/0257-binary-tree-paths/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0547-number-of-provinces](https://github.com/DeshratnaBharti/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
+| [0743-network-delay-time](https://github.com/DeshratnaBharti/Leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/DeshratnaBharti/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -355,6 +357,7 @@ Feel free to fork and raise a Pull Request.
 | [0207-course-schedule](https://github.com/DeshratnaBharti/Leetcode/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/DeshratnaBharti/Leetcode/tree/main/0210-course-schedule-ii/) | Medium |
 | [0547-number-of-provinces](https://github.com/DeshratnaBharti/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
+| [0743-network-delay-time](https://github.com/DeshratnaBharti/Leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/DeshratnaBharti/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
 | [2583-kth-largest-sum-in-a-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/2583-kth-largest-sum-in-a-binary-tree/) | Medium |
 ## Binary Tree
@@ -383,6 +386,7 @@ Feel free to fork and raise a Pull Request.
 | [0207-course-schedule](https://github.com/DeshratnaBharti/Leetcode/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/DeshratnaBharti/Leetcode/tree/main/0210-course-schedule-ii/) | Medium |
 | [0547-number-of-provinces](https://github.com/DeshratnaBharti/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
+| [0743-network-delay-time](https://github.com/DeshratnaBharti/Leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/DeshratnaBharti/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
 ## Topological Sort
 | Problem Name | Difficulty |
@@ -393,4 +397,8 @@ Feel free to fork and raise a Pull Request.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0257-binary-tree-paths](https://github.com/DeshratnaBharti/Leetcode/tree/main/0257-binary-tree-paths/) | Easy |
+## Shortest Path
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0743-network-delay-time](https://github.com/DeshratnaBharti/Leetcode/tree/main/0743-network-delay-time/) | Medium |
 <!---LeetCode Topics End-->
