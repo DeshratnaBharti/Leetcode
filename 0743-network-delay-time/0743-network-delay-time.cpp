@@ -1,36 +1,37 @@
 class Solution {
 public:
-    int networkDelayTime(vector<vector<int>>& times, int n, int k) {
+    typedef pair<int,int>P;
+    int networkDelayTime(vector<vector<int>>& times, int n, int src) {
         unordered_map<int,vector<pair<int,int>>>adj;
-        for(auto &vec : times){
-            int u = vec[0];
-            int v = vec[1];
-            int w = vec[2];
-            adj[u].push_back({v,w});
+        for(int i=0;i<times.size();i++){
+            int a = times[i][0];
+            int b = times[i][1];
+            int c = times[i][2];
+            adj[a].push_back({b,c});
         }
-        priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>>pq;
-        vector<int>result(n+1,INT_MAX);
-        result[k]=0;
-        pq.push({0,k});
+        priority_queue<P,vector<P>,greater<P>>pq;
+        vector<int>res(n+1,INT_MAX);
+        res[src] = 0;
+        pq.push({0,src});
         while(!pq.empty()){
-            int d = pq.top().first;
-            int node = pq.top().second;
+            auto curr = pq.top();
             pq.pop();
-            for(auto &vec: adj[node]){
-                int adjNode = vec.first;
-                int dist = vec.second;
-                if(d+dist <result[adjNode]){
-                    result[adjNode] = d + dist;
-                    pq.push({d+dist,adjNode});
+            int pahleWalaDist = curr.first;
+            int srcNode = curr.second;
+            for(auto &neighbour:adj[srcNode]){
+                int node = neighbour.first;
+                int currDist = neighbour.second;
+                if(pahleWalaDist + currDist < res[node]) {
+                    res[node] = pahleWalaDist + currDist;
+                    pq.push({pahleWalaDist+currDist,node});
                 }
             }
         }
         int ans = INT_MIN;
-        for(int i=1;i<=n;i++){
-            ans = max(ans,result[i]);
+        for(int i=1;i<res.size();i++){
+            ans = max(res[i],ans);
         }
         if(ans==INT_MAX) return -1;
         return ans;
-        
     }
 };
