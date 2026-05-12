@@ -1,13 +1,25 @@
-
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
 class Solution {
 public:
-    bool isM(TreeNode* n1,TreeNode* n2){
-        if(n1==NULL and n2==NULL) return true;
-        if(n1==NULL or n2==NULL) return false;
-        if(n1->val != n2->val) return false;
-        return isM(n1->left,n2->right) and isM(n1->right,n2->left);
+    bool solve(TreeNode* l,TreeNode* r){
+        if(l==nullptr and r ==nullptr) return true;
+        if(l==nullptr or r ==nullptr) return false;
+        if(l->val != r->val) return false;
+        return solve(l->left,r->right) and solve(l->right,r->left);
     }
     bool isSymmetric(TreeNode* root) {
-        return isM(root->left,root->right);
+        if(root==nullptr) return true;
+        return solve(root->left,root->right);
+        
     }
 };
