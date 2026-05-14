@@ -154,6 +154,7 @@ Feel free to fork and raise a Pull Request.
 | [0974-subarray-sums-divisible-by-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
 | [1091-shortest-path-in-binary-matrix](https://github.com/DeshratnaBharti/Leetcode/tree/main/1091-shortest-path-in-binary-matrix/) | Medium |
 | [1207-unique-number-of-occurrences](https://github.com/DeshratnaBharti/Leetcode/tree/main/1207-unique-number-of-occurrences/) | Easy |
+| [1631-path-with-minimum-effort](https://github.com/DeshratnaBharti/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [1636-sort-array-by-increasing-frequency](https://github.com/DeshratnaBharti/Leetcode/tree/main/1636-sort-array-by-increasing-frequency/) | Easy |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/DeshratnaBharti/Leetcode/tree/main/1823-find-the-winner-of-the-circular-game/) | Medium |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
@@ -202,6 +203,7 @@ Feel free to fork and raise a Pull Request.
 | [0287-find-the-duplicate-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0287-find-the-duplicate-number/) | Medium |
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0704-binary-search](https://github.com/DeshratnaBharti/Leetcode/tree/main/0704-binary-search/) | Easy |
+| [1631-path-with-minimum-effort](https://github.com/DeshratnaBharti/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -309,6 +311,7 @@ Feel free to fork and raise a Pull Request.
 | ------- | ------- |
 | [0239-sliding-window-maximum](https://github.com/DeshratnaBharti/Leetcode/tree/main/0239-sliding-window-maximum/) | Hard |
 | [0743-network-delay-time](https://github.com/DeshratnaBharti/Leetcode/tree/main/0743-network-delay-time/) | Medium |
+| [1631-path-with-minimum-effort](https://github.com/DeshratnaBharti/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 ## Monotonic Queue
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -352,6 +355,7 @@ Feel free to fork and raise a Pull Request.
 | [0547-number-of-provinces](https://github.com/DeshratnaBharti/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0743-network-delay-time](https://github.com/DeshratnaBharti/Leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/DeshratnaBharti/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
+| [1631-path-with-minimum-effort](https://github.com/DeshratnaBharti/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -364,6 +368,7 @@ Feel free to fork and raise a Pull Request.
 | [0743-network-delay-time](https://github.com/DeshratnaBharti/Leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/DeshratnaBharti/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
 | [1091-shortest-path-in-binary-matrix](https://github.com/DeshratnaBharti/Leetcode/tree/main/1091-shortest-path-in-binary-matrix/) | Medium |
+| [1631-path-with-minimum-effort](https://github.com/DeshratnaBharti/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [2583-kth-largest-sum-in-a-binary-tree](https://github.com/DeshratnaBharti/Leetcode/tree/main/2583-kth-largest-sum-in-a-binary-tree/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
@@ -386,6 +391,7 @@ Feel free to fork and raise a Pull Request.
 | ------- | ------- |
 | [0547-number-of-provinces](https://github.com/DeshratnaBharti/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/DeshratnaBharti/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
+| [1631-path-with-minimum-effort](https://github.com/DeshratnaBharti/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -411,4 +417,5 @@ Feel free to fork and raise a Pull Request.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1091-shortest-path-in-binary-matrix](https://github.com/DeshratnaBharti/Leetcode/tree/main/1091-shortest-path-in-binary-matrix/) | Medium |
+| [1631-path-with-minimum-effort](https://github.com/DeshratnaBharti/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 <!---LeetCode Topics End-->
