@@ -157,6 +157,7 @@ Feel free to fork and raise a Pull Request.
 | [1631-path-with-minimum-effort](https://github.com/DeshratnaBharti/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [1636-sort-array-by-increasing-frequency](https://github.com/DeshratnaBharti/Leetcode/tree/main/1636-sort-array-by-increasing-frequency/) | Easy |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/DeshratnaBharti/Leetcode/tree/main/1823-find-the-winner-of-the-circular-game/) | Medium |
+| [1911-maximum-alternating-subsequence-sum](https://github.com/DeshratnaBharti/Leetcode/tree/main/1911-maximum-alternating-subsequence-sum/) | Medium |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
 | [3232-find-if-digit-game-can-be-won](https://github.com/DeshratnaBharti/Leetcode/tree/main/3232-find-if-digit-game-can-be-won/) | Easy |
 | [3233-find-the-count-of-numbers-which-are-not-special](https://github.com/DeshratnaBharti/Leetcode/tree/main/3233-find-the-count-of-numbers-which-are-not-special/) | Medium |
@@ -232,6 +233,7 @@ Feel free to fork and raise a Pull Request.
 | [0416-partition-equal-subset-sum](https://github.com/DeshratnaBharti/Leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/DeshratnaBharti/Leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0509-fibonacci-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0509-fibonacci-number/) | Easy |
+| [1911-maximum-alternating-subsequence-sum](https://github.com/DeshratnaBharti/Leetcode/tree/main/1911-maximum-alternating-subsequence-sum/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
