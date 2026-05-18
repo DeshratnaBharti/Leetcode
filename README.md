@@ -145,6 +145,7 @@ Feel free to fork and raise a Pull Request.
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0283-move-zeroes](https://github.com/DeshratnaBharti/Leetcode/tree/main/0283-move-zeroes/) | Easy |
 | [0287-find-the-duplicate-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0287-find-the-duplicate-number/) | Medium |
+| [0300-longest-increasing-subsequence](https://github.com/DeshratnaBharti/Leetcode/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0416-partition-equal-subset-sum](https://github.com/DeshratnaBharti/Leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/DeshratnaBharti/Leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
@@ -202,6 +203,7 @@ Feel free to fork and raise a Pull Request.
 | [0222-count-complete-tree-nodes](https://github.com/DeshratnaBharti/Leetcode/tree/main/0222-count-complete-tree-nodes/) | Easy |
 | [0268-missing-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0287-find-the-duplicate-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0287-find-the-duplicate-number/) | Medium |
+| [0300-longest-increasing-subsequence](https://github.com/DeshratnaBharti/Leetcode/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0349-intersection-of-two-arrays](https://github.com/DeshratnaBharti/Leetcode/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0704-binary-search](https://github.com/DeshratnaBharti/Leetcode/tree/main/0704-binary-search/) | Easy |
 | [1631-path-with-minimum-effort](https://github.com/DeshratnaBharti/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
@@ -230,6 +232,7 @@ Feel free to fork and raise a Pull Request.
 | [0062-unique-paths](https://github.com/DeshratnaBharti/Leetcode/tree/main/0062-unique-paths/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0198-house-robber](https://github.com/DeshratnaBharti/Leetcode/tree/main/0198-house-robber/) | Medium |
+| [0300-longest-increasing-subsequence](https://github.com/DeshratnaBharti/Leetcode/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/DeshratnaBharti/Leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/DeshratnaBharti/Leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0509-fibonacci-number](https://github.com/DeshratnaBharti/Leetcode/tree/main/0509-fibonacci-number/) | Easy |
