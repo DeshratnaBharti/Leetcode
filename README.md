@@ -158,6 +158,7 @@ Feel free to fork and raise a Pull Request.
 | [1207-unique-number-of-occurrences](https://github.com/DeshratnaBharti/Leetcode/tree/main/1207-unique-number-of-occurrences/) | Easy |
 | [1631-path-with-minimum-effort](https://github.com/DeshratnaBharti/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [1636-sort-array-by-increasing-frequency](https://github.com/DeshratnaBharti/Leetcode/tree/main/1636-sort-array-by-increasing-frequency/) | Easy |
+| [1752-check-if-array-is-sorted-and-rotated](https://github.com/DeshratnaBharti/Leetcode/tree/main/1752-check-if-array-is-sorted-and-rotated/) | Easy |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/DeshratnaBharti/Leetcode/tree/main/1823-find-the-winner-of-the-circular-game/) | Medium |
 | [1911-maximum-alternating-subsequence-sum](https://github.com/DeshratnaBharti/Leetcode/tree/main/1911-maximum-alternating-subsequence-sum/) | Medium |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/DeshratnaBharti/Leetcode/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
