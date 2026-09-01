@@ -283,12 +283,14 @@ Feel free to fork and raise a Pull Request.
 | [0344-reverse-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0344-reverse-string/) | Easy |
 | [0387-first-unique-character-in-a-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0387-first-unique-character-in-a-string/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/DeshratnaBharti/Leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
+| [1910-remove-all-occurrences-of-a-substring](https://github.com/DeshratnaBharti/Leetcode/tree/main/1910-remove-all-occurrences-of-a-substring/) | Medium |
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/DeshratnaBharti/Leetcode/tree/main/0020-valid-parentheses/) | Easy |
 | [0094-binary-tree-inorder-traversal](https://github.com/DeshratnaBharti/Leetcode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/DeshratnaBharti/Leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
+| [1910-remove-all-occurrences-of-a-substring](https://github.com/DeshratnaBharti/Leetcode/tree/main/1910-remove-all-occurrences-of-a-substring/) | Medium |
 ## Monotonic Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -308,6 +310,7 @@ Feel free to fork and raise a Pull Request.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/DeshratnaBharti/Leetcode/tree/main/1823-find-the-winner-of-the-circular-game/) | Medium |
+| [1910-remove-all-occurrences-of-a-substring](https://github.com/DeshratnaBharti/Leetcode/tree/main/1910-remove-all-occurrences-of-a-substring/) | Medium |
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
