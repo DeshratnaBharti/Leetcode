@@ -137,6 +137,7 @@ Feel free to fork and raise a Pull Request.
 | [0033-search-in-rotated-sorted-array](https://github.com/DeshratnaBharti/Leetcode/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/DeshratnaBharti/Leetcode/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0035-search-insert-position](https://github.com/DeshratnaBharti/Leetcode/tree/main/0035-search-insert-position/) | Easy |
+| [0042-trapping-rain-water](https://github.com/DeshratnaBharti/Leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0049-group-anagrams](https://github.com/DeshratnaBharti/Leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0053-maximum-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0053-maximum-subarray/) | Medium |
 | [0056-merge-intervals](https://github.com/DeshratnaBharti/Leetcode/tree/main/0056-merge-intervals/) | Medium |
@@ -234,6 +235,7 @@ Feel free to fork and raise a Pull Request.
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0042-trapping-rain-water](https://github.com/DeshratnaBharti/Leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0053-maximum-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0053-maximum-subarray/) | Medium |
 | [0062-unique-paths](https://github.com/DeshratnaBharti/Leetcode/tree/main/0062-unique-paths/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/DeshratnaBharti/Leetcode/tree/main/0152-maximum-product-subarray/) | Medium |
@@ -266,6 +268,7 @@ Feel free to fork and raise a Pull Request.
 | [0011-container-with-most-water](https://github.com/DeshratnaBharti/Leetcode/tree/main/0011-container-with-most-water/) | Medium |
 | [0015-3sum](https://github.com/DeshratnaBharti/Leetcode/tree/main/0015-3sum/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/DeshratnaBharti/Leetcode/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
+| [0042-trapping-rain-water](https://github.com/DeshratnaBharti/Leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0075-sort-colors](https://github.com/DeshratnaBharti/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0151-reverse-words-in-a-string](https://github.com/DeshratnaBharti/Leetcode/tree/main/0151-reverse-words-in-a-string/) | Medium |
 | [0283-move-zeroes](https://github.com/DeshratnaBharti/Leetcode/tree/main/0283-move-zeroes/) | Easy |
@@ -288,12 +291,14 @@ Feel free to fork and raise a Pull Request.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/DeshratnaBharti/Leetcode/tree/main/0020-valid-parentheses/) | Easy |
+| [0042-trapping-rain-water](https://github.com/DeshratnaBharti/Leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0094-binary-tree-inorder-traversal](https://github.com/DeshratnaBharti/Leetcode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/DeshratnaBharti/Leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1910-remove-all-occurrences-of-a-substring](https://github.com/DeshratnaBharti/Leetcode/tree/main/1910-remove-all-occurrences-of-a-substring/) | Medium |
 ## Monotonic Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0042-trapping-rain-water](https://github.com/DeshratnaBharti/Leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/DeshratnaBharti/Leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 ## Queue
 | Problem Name | Difficulty |
